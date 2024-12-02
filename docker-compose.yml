@@ -15,9 +15,10 @@ services:
   mongodb:
     image: mongo
     ports:
-      - "27017:27017"  # Expose MongoDB on port 27017
-    networks:
-      - bis_network
+      - "27017:27017"
+    volumes:
+      - ./bis_integration:/data/db
+      - ./bis_integration:/restaurants
 
   # Nginx container (2 instances)
   nginx1:
