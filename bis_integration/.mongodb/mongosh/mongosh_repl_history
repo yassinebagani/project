@@ -1,0 +1,15 @@
+show databases
+exit
+docker-compose up --build
+db.restaurants.find().count()
+db.<restaurants>.find().count()
+db.<your-collection-name>.find().count()
+show collections
+use bis_integration
+show databases
+docker exec -it bis_integration-mongodb-1 mongosh
+db.restaurants.find().limit(5).pretty()
+db.restaurants.countDocuments()
+use bis_integration
+exit
+show databases

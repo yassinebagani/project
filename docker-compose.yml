@@ -43,7 +43,6 @@ services:
 
 networks:
   bis_network:
-    external: true  # Ensure all containers are on the same network
-
+driver: bridge
 volumes:
   jenkins_home:
