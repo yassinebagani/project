@@ -20,8 +20,8 @@ pipeline {
                 script {
                     // Create the HTML directory and copy modified files
                     sh '''
-                    mkdir -p ./html
-                    cp -r ./path/to/modified/files/* ./html/
+                   mkdir -p ./html
+cp -r ./html/* ./html/
                     '''
                 }
             }
