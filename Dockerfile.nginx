@@ -1,0 +1,4 @@
+FROM nginx:latest
+
+# Copy modified files to the Nginx web root
+COPY ./html /usr/share/nginx/html
